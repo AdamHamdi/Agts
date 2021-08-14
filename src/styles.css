@@ -1,1 +1,185 @@
 /* You can add global styles to this file, and also import other style files */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calender {
+    border-radius: 50%;
+    background-color: white;
+    padding: 0;
+}
+
+.title-regle {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titles span {
+    font-weight: bold;
+}
+
+.regle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    background-color: rgb(187, 204, 230);
+    border: 5px solid rgb(20, 224, 204);
+    border-radius: 10px;
+}
+
+.regle .ball {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(207, 101, 14);
+    border-radius: 50%;
+}
+
+.regle .ball span {
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: rgb(35, 196, 193);
+    border: 5px solid rgb(221, 221, 154);
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+}
+
+.input-groupe {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.input-groupe input {
+    background-color: rgb(186, 201, 201);
+    border: 5px solid rgb(221, 221, 154);
+    border-radius: 10px;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.charts img {
+    height: 140px;
+    width: 25%;
+}
+
+.demo-inline-calendar-card {
+    background-color: rgb(235, 229, 229);
+}
+
+@media(max-width: 768px) {
+    .calender {
+        width: 50%;
+    }
+    .demo-inline-calendar-card {
+        width: 100%;
+    }
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title-regle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .titles {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .regle {
+        background-color: rgb(187, 204, 230);
+        border: 5px solid rgb(20, 224, 204);
+        width: fit-content;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .regle .ball {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .input-groupe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .input-groupe input {
+        width: 100%;
+        margin: 5px 0!important;
+    }
+    .search {
+        border-radius: 5px;
+        height: 46px;
+        width: 100%;
+    }
+    .charts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    .charts img {
+        width: 50%;
+        height: 100%
+    }
+}
+
+@media(max-width: 575px) {
+    .charts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .calender {
+        width: 100%;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
