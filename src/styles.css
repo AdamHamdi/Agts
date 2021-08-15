@@ -3,13 +3,20 @@
 .head {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .calender {
     border-radius: 50%;
-    background-color: white;
-    padding: 0;
+    background-color: rgb(187 204 230);
+    width: 342px;
+    height: 328px;
+    position: absolute;
+    top: -68px;
+    left: -61px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 
 .title-regle {
@@ -93,15 +100,25 @@
 }
 
 .demo-inline-calendar-card {
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(187 204 230);
+    width: 203px;
+    box-shadow: none!important;
 }
 
 @media(max-width: 768px) {
     .calender {
-        width: 50%;
+        position: relative!important;
+        width: 100%;
+        top: 0;
+        background-color: transparent!important;
+        left: 0;
+        align-items: start;
+        display: flex;
     }
     .demo-inline-calendar-card {
-        width: 100%;
+        background-color: rgb(187 204 230);
+        width: 100vw;
+        height: fit-content;
     }
     .head {
         display: flex;
@@ -163,14 +180,23 @@
 }
 
 @media(max-width: 575px) {
+    .calender {
+        position: relative!important;
+        width: 90%;
+        background-color: transparent!important;
+        margin: 0 0 60px 10px;
+        padding: 0;
+    }
+    .demo-inline-calendar-card {
+        background-color: rgb(187 204 230);
+        width: 100%;
+        height: fit-content;
+    }
     .charts {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-    }
-    .calender {
-        width: 100%;
     }
 }
 
