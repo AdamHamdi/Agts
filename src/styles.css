@@ -1,212 +1,221 @@
-/* You can add global styles to this file, and also import other style files */
-
-.head {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.calender {
-    border-radius: 50%;
-    background-color: rgb(187 204 230);
-    width: 342px;
-    height: 328px;
-    position: absolute;
-    top: -68px;
-    left: -61px;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-
-.title-regle {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
-
-.titles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.titles span {
-    font-weight: bold;
-}
-
-.regle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 35px;
-    width: 100%;
-    background-color: rgb(187, 204, 230);
-    border: 5px solid rgb(20, 224, 204);
-    border-radius: 10px;
-}
-
-.regle .ball {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(207, 101, 14);
-    border-radius: 50%;
-}
-
-.regle .ball span {
-    color: #fff;
-}
-
-.search {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-    background-color: rgb(35, 196, 193);
-    border: 5px solid rgb(221, 221, 154);
-    border-radius: 50%;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-}
-
-.input-groupe {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-}
-
-.input-groupe input {
-    background-color: rgb(186, 201, 201);
-    border: 5px solid rgb(221, 221, 154);
-    border-radius: 10px;
-}
-
-.charts {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.charts img {
-    height: 140px;
-    width: 25%;
-}
-
-.demo-inline-calendar-card {
-    background-color: rgb(187 204 230);
-    width: 203px;
-    box-shadow: none!important;
-}
-
-@media(max-width: 768px) {
-    .calender {
-        position: relative!important;
-        width: 100%;
-        top: 0;
-        background-color: transparent!important;
-        left: 0;
-        align-items: start;
-        display: flex;
-    }
-    .demo-inline-calendar-card {
-        background-color: rgb(187 204 230);
-        width: 100vw;
-        height: fit-content;
-    }
+    /* You can add global styles to this file, and also import other style files */
+    
     .head {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+        align-items: start;
     }
+    
+    .calender {
+        border-radius: 50%;
+        background-color: rgb(187 204 230);
+        width: 342px;
+        height: 328px;
+        position: absolute;
+        top: -68px;
+        left: -61px;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    
     .title-regle {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
+        align-items: start;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
+    
     .titles {
         display: flex;
-        align-items: start;
-        flex-direction: column;
-        height: 100vh;
+        justify-content: space-between;
+        align-items: center;
     }
+    
+    .titles span {
+        font-weight: bold;
+    }
+    
     .regle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35px;
+        width: 100%;
         background-color: rgb(187, 204, 230);
         border: 5px solid rgb(20, 224, 204);
-        width: fit-content;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        height: 100vh;
+        border-radius: 10px;
     }
+    
     .regle .ball {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(207, 101, 14);
+        border-radius: 50%;
     }
+    
+    .regle .ball span {
+        color: #fff;
+    }
+    
+    .search {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        background-color: rgb(35, 196, 193);
+        border: 5px solid rgb(221, 221, 154);
+        border-radius: 50%;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+    }
+    
     .input-groupe {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
     }
+    
     .input-groupe input {
-        width: 100%;
-        margin: 5px 0!important;
+        background-color: rgb(186, 201, 201);
+        border: 5px solid rgb(221, 221, 154);
+        border-radius: 10px;
     }
-    .search {
-        border-radius: 5px;
-        height: 46px;
-        width: 100%;
-    }
+    
     .charts {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        flex-flow: row wrap;
     }
+    
     .charts img {
-        width: 50%;
-        height: 100%
+        height: 140px;
+        width: 25%;
     }
-}
-
-@media(max-width: 575px) {
-    .calender {
-        position: relative!important;
-        width: 95%;
-        background-color: transparent!important;
-        margin: 10px 10px;
-        padding: 0;
-        height: 25%;
-    }
+    
     .demo-inline-calendar-card {
         background-color: rgb(187 204 230);
-        width: 100%;
-        height: fit-content;
+        width: 203px;
+        box-shadow: none!important;
     }
-    .charts {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+    
+    .head {
+        background-color: #505050;
+        height: 263px;
     }
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+    
+    @media(max-width: 768px) {
+        .head {
+            background-color: #505050;
+            height: fit-content;
+        }
+        .calender {
+            position: relative!important;
+            width: 100%;
+            top: 0;
+            background-color: transparent!important;
+            left: 0;
+            align-items: start;
+            display: flex;
+        }
+        .demo-inline-calendar-card {
+            background-color: rgb(187 204 230);
+            width: 100vw;
+            height: fit-content;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+        .title-regle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .titles {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .regle {
+            background-color: rgb(187, 204, 230);
+            border: 5px solid rgb(20, 224, 204);
+            width: fit-content;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .regle .ball {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .input-groupe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .input-groupe input {
+            width: 100%;
+            margin: 5px 0!important;
+        }
+        .search {
+            border-radius: 5px;
+            height: 46px;
+            width: 100%;
+        }
+        .charts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+        .charts img {
+            width: 50%;
+            height: 100%
+        }
+    }
+    
+    @media(max-width: 575px) {
+        .calender {
+            position: relative!important;
+            width: 95%;
+            background-color: transparent!important;
+            margin: 10px 10px;
+            padding: 0;
+            height: 25%;
+        }
+        .demo-inline-calendar-card {
+            background-color: rgb(187 204 230);
+            width: 100%;
+            height: fit-content;
+        }
+        .charts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        margin: 0;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+    }
